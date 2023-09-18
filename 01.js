@@ -11,8 +11,17 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
+  var final = array.filter(function(x){
+    if(x/1 == x){
+      return x;
+    }
+  })
 
+  console.log(final)
+  return final;
 }
+
+soloNumeros([1, 'Henry', 2])
 
 // No modifiques nada debajo de esta linea //
 
